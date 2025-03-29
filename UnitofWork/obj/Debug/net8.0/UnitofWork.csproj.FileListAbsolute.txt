@@ -1,0 +1,17 @@
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\bin\Debug\net8.0\UnitofWork.deps.json
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\bin\Debug\net8.0\UnitofWork.dll
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\bin\Debug\net8.0\UnitofWork.pdb
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\bin\Debug\net8.0\DAL.dll
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\bin\Debug\net8.0\Repository.dll
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\bin\Debug\net8.0\DAL.pdb
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\bin\Debug\net8.0\Repository.pdb
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\obj\Debug\net8.0\UnitofWork.csproj.AssemblyReference.cache
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\obj\Debug\net8.0\UnitofWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\obj\Debug\net8.0\UnitofWork.AssemblyInfoInputs.cache
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\obj\Debug\net8.0\UnitofWork.AssemblyInfo.cs
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\obj\Debug\net8.0\UnitofWork.csproj.CoreCompileInputs.cache
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\obj\Debug\net8.0\UnitofWork.csproj.Up2Date
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\obj\Debug\net8.0\UnitofWork.dll
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\obj\Debug\net8.0\refint\UnitofWork.dll
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\obj\Debug\net8.0\UnitofWork.pdb
+C:\Users\dell\Documents\website\TritanTraveler\UnitofWork\obj\Debug\net8.0\ref\UnitofWork.dll
