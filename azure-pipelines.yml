@@ -1,26 +1,36 @@
 # azure-pipelines.yml
 trigger:
-  - main   # or your default branch
+  - main   # Adjust to your default branch
 
 pool:
-  vmImage: 'windows-latest'   # Windows hosted agent
+  vmImage: 'windows-latest'   # Use Microsoft-hosted Windows agent
+
+variables:
+  buildConfiguration: 'Release'
 
 steps:
-  - task: UsePythonVersion@0
+  # Step 1: Install .NET Core SDK
+  - task: UseDotNet@2
     inputs:
-      versionSpec: '3.x'
-      addToPath: true
+      packageType: 'sdk'
+      version: '8.0.x'   # Adjust to your project's .NET Core version
+      installationPath: $(Agent.ToolsDirectory)/dotnet
 
-  - script: |
-      python -m pip install --upgrade pip
-      pip install -r requirements.txt
-    displayName: 'Install dependencies'
+  # Step 2: Restore NuGet packages
+  - script: dotnet restore
+    displayName: 'Restore NuGet packages'
 
-  - script: |
-      python -m unittest discover
-    displayName: 'Run tests'
-
-  # Example: if you have a build step
-  - script: |
-      echo "Add your build commands here"
+  # Step 3: Build the project
+  - script: dotnet build --configuration $(buildConfiguration) --no-restore
     displayName: 'Build project'
+
+  # Step 4: Run tests
+  - script: dotnet test --configuration $(buildConfiguration) --no-build --verbosity normal
+    displayName: 'Run unit tests'
+
+  # Optional: Publish artifacts
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: 'bin/$(buildConfiguration)'
+      ArtifactName: 'drop'
+      publishLocation: 'Container'
